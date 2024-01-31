@@ -1,0 +1,156 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #ECECEC;
+    padding: 20px;
+    position: relative; 
+}
+
+.sidebar {
+    width: 250px;
+    background: #ECECEC;
+    padding: 20px;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../assets/ellipseLogo.png') center/cover; 
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-img {
+    width: 150px;
+    height: 60px;
+}
+
+
+.sidebar-item {
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: background 0.3s, border-radius 0.3s;
+}
+
+.sidebar-item:hover {
+    background: #0192E0;
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+
+.sidebar-item:hover .icon-img,
+.sidebar-item:hover .item-name {
+    color: white;
+}
+
+.icon-img {
+    padding-left: 20px;
+    width: 30px;
+    height: 17px;
+    margin-right: 10px;
+    filter: brightness(0.7);
+    transition: filter 0.3s, color 0.3s; 
+}
+
+.sidebar-item:hover .icon-img {
+    filter: brightness(0) invert(1);
+}
+
+.item-name {
+    font-size: 17px;
+    transition: color 0.3s; 
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 100px; 
+    padding: 5px;
+    height: 25px;
+    margin-left: 500px; 
+    border: 1px solid #D3D3D3;
+    width: 300px; 
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none; 
+    border-radius: 50px; 
+}
+
+
+.rotated-container {
+    width: 100px;
+    height: 150px;
+    background: #ECECEC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 10px; 
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+
+
+
+
+

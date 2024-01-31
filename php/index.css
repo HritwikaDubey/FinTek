@@ -1,0 +1,170 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        flex-direction: row; 
+    }
+}
+
+.left-container,
+.right-container {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container {
+    background: linear-gradient(151deg, #D9F6FF 0%, #0192E0 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo img {
+    width: 150px; 
+    height: 64px;
+}
+
+.content {
+    text-align: center;
+    color: black;
+}
+
+.right-container {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.login {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.image-group {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.image-group img {
+    margin: 0 7px;
+}
+
+.image2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.forgot-password {
+    color: black;
+    text-decoration: none;
+    margin-left: 170px;
+    font-size: 16px;
+    display: block;
+    margin-top: -13px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #0192E0;
+}
+
+.login-button {
+    position: relative;
+    width: 149px;
+    height: 43px;
+    margin-top: 20px;
+    background-color: #0192E0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 33px;
+    color: white;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+    word-wrap: break-word;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #C0C0C0;
+}
+
+
+.phone-icon,
+.user-icon,
+.lock-icon {
+    width: 100%; 
+    height: 50px;
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) inset, 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 33px;
+    font-size: medium;
+    margin-bottom: 2px;
+    border: none;
+    padding-left: 60px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.phone-icon,
+.user-icon,
+.lock-icon {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-icon {
+    background: url('phone.svg') no-repeat;
+    background-size: 18px;
+    background-position: 23px center;
+}
+
+.user-icon {
+    background: url('user.svg') no-repeat;
+    background-size: 18px;
+    background-position: 23px center;
+}
+
+.lock-icon {
+    background: url('lock.svg') no-repeat;
+    background-size: 18px;
+    background-position: 23px center;
+}
+
+
+.phone-icon.error {
+    border: 2px solid red; 
+}
